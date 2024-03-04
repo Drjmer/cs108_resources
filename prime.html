@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prime</title>
+    </head>
+    <script src="prime.js"></script>
+    <script >
+        function runFunc(){
+            var x=document.getElementById("number").value;
+            var found=isPrime(x);
+            if(found===1)
+            {
+                alert("Prime Number")
+            }
+            else
+            {
+                alert("Not a Prime Number")
+            }
+        }
+    </script>
+    <form>
+        Enter a number:<input type="number" id="number" value="number"><br>
+        <input type="submit" onclick="runFunc()" id="submit">
+    </form>
+
+</html>

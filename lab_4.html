@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Largest Prime Number</title>
+</head>
+<body>
+
+<!-- Input field and button -->
+<input type="number" id="inputNumber" placeholder="Enter a number">
+<button onclick="prime_number()">Find Largest Prime</button>
+
+<!-- Result display -->
+<p id="result"></p>
+
+  
+  <script>
+      // <!--WRITE YOUR CODE HERE-->
+      // YOUR CODE SHOULD WORK, WHEN WE PRESS THE BUTTON, AFTER GIVING A CERTAIN INPUT.
+      function prime_number(){
+        var number=document.getElementById("inputNumber").value;
+        
+        var n=number;
+        if(number==1||number==0)
+        {
+          document.getElementById("result").innerHTML="Largest prime less than or equal to "+n+": 0";
+        }
+        else if(number==2)
+          {
+            document.getElementById("result").innerHTML="Largest prime less than or equal to "+n+": 2";
+          }
+        else if(number<0)  
+        {
+          document.getElementById("result").innerHTML="Largest prime less than or equal to "+n+": 0";
+        }
+        else{
+          for(let i=2;i<number;i++)
+          {
+              if(number%i===0){
+                number--;
+                continue;}
+  
+            
+          }
+          document.getElementById("result").innerHTML="Largest prime less than or equal to "+n+": "+number;
+        }
+      }
+  </script>
+</body>
+</html>

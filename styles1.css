@@ -1,0 +1,39 @@
+
+header{
+    font-size: 40px;
+    font-weight: 1000;
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+    
+}
+.div1
+{
+   background-color: gray;
+   color: white
+}
+a{
+    margin:20px;
+    text-decoration: none;
+    color: white;
+}
+a:hover
+{
+    color:red
+}
+.div2
+{
+    margin-left:80px;
+    margin-top: 30px;
+}
+footer
+{
+    color: white;
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    bottom:0;
+    left: 0;
+    right: 0;
+    
+}

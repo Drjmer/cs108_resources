@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IITB CSE</title>
+        <link rel="icon" href="logo.jpeg" > 
+        <link rel="stylesheet" href="styles.css">       
+    </head>
+    <body>
+        
+        <div class="students" >
+        <h2><u>Honorable Students of Computer Science</u></h2>
+        <table border="4">
+            <tr>
+                <th>S.No</th>
+                <th>Roll No.</th>
+                <th>Name</th>
+                <th>Graduating Year</th>
+                <th> Research Interests</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>210050138</td>
+                <td><a href="https://www.cse.iitb.ac.in/~sachiray/" target="_blank">Sabyasachi Samantaray</a></td>
+                <td>2025</td>
+                <td>Deep Learning,NLP,CV</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>210050061</td>
+                <td><a href="https://www.cse.iitb.ac.in/~guramrit/" target="_blank">Guramarit Singh</a></td>
+                <td>2025</td>
+                <td>Edge Computing,Virtualisation Technologies</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>22b1053</td>
+                <td>Kavya Gupta</td>
+                <td>2026</td>
+                <td>Network Security, Distributed Systems</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>22b1003</td>
+                <td>Saksham Rathi</td>
+                <td>2025</td>
+                <td>Graph Theory, Combinatorics</td>
+            </tr>
+        </table>
+    </div>
+    <br><br>
+    <div class="add_student" id="add_student">
+        <h2>Add a new student</h2>
+        <form name="Registration Form">
+            <label for="Roll Number">Roll Number:</label>
+            <input type="text" id="Roll Number" name="Roll Number" placeholder="Enter Roll number">
+            <br><br><label for="Name" >Name</label>
+            <input type="text" id="Name" name="Name" placeholder="Enter Name">
+            <br><br><label for="Graduation Year">Graduation Year: </label>
+            <select id="Graduation Year" name="Graduation Year">
+                <option>2025</option>
+                <option>2026</option>
+                <option>2027</option>
+                <option>2028</option>
+                <option>2029</option>
+                <option>2030</option>
+            </select>
+            <br><br>
+            <label for="Website">Website:</label>
+            <input type="text" name="Website" id="Website" placeholder="Enter Website">
+            <br><br><label for="Research Interests:">Research Interests:</label>
+            <br>
+            <textarea id="Research Interests" name="Research Interests" rows="5" cols="50" placeholder="Enter Research Interests"></textarea>
+           <br> <input class="submit" type="submit" placeholder="Submit">
+        </form>
+    </div>
+    
+    </body>
+</html>
